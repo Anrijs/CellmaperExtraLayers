@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Cellmapper Extra Layers",
+    "version": "1.0",
+  
+    "description": "Adds support for extra layers in cellmapper",
+  
+    "icons": {
+      "48": "icons/logo.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://www.cellmapper.net/map*"],
+        "js": ["cellmapper.js"]
+      }
+    ]
+}
+  
