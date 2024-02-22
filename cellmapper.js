@@ -122,6 +122,21 @@ new CMCustomLayers(map, [
         name: "TELE2",
         layers: [
             {
+                name: '5G+',
+                layer: new ol.layer.Tile({
+                    source: new ol.source.XYZ({
+                        attributions: [
+                            baseAttrib,
+                            '<span class="attribute_text">https://www.tele2.lv/karte/',
+                            "</span>",
+                        ],
+                        url: "https://www.tele2.lv/coverage/?cmd=get&cid=12756&coverage_tile=1&z={z}&x={x}&y={y}&t=5G&q=3",
+                        maxZoom: 18,
+                    }),
+                    opacity: 0.7
+                 })
+            },
+            {
                 name: '5G',
                 layer: new ol.layer.Tile({
                     source: new ol.source.XYZ({
@@ -130,7 +145,7 @@ new CMCustomLayers(map, [
                             '<span class="attribute_text">https://www.tele2.lv/karte/',
                             "</span>",
                         ],
-                        url: "https://wms2.kartes.lv/TEL2/wgs/TELE2G5/{z}/{x}/{y}.png",
+                        url: "https://www.tele2.lv/coverage/?cmd=get&cid=12756&coverage_tile=1&z={z}&x={x}&y={y}&t=5G&q=2",
                         maxZoom: 18,
                     }),
                     opacity: 0.7
@@ -145,22 +160,7 @@ new CMCustomLayers(map, [
                             '<span class="attribute_text">https://www.tele2.lv/karte/',
                             "</span>",
                         ],
-                        url: "https://wms2.kartes.lv/TEL2/wgs/TELE2G4/{z}/{x}/{y}.png",
-                        maxZoom: 18,
-                    }),
-                    opacity: 0.7
-                 })
-            },
-            {
-                name: '3G',
-                layer: new ol.layer.Tile({
-                    source: new ol.source.XYZ({
-                        attributions: [
-                            baseAttrib,
-                            '<span class="attribute_text">https://www.tele2.lv/karte/',
-                            "</span>",
-                        ],
-                        url: "https://wms2.kartes.lv/TEL2/wgs/TELE2G3/{z}/{x}/{y}.png",
+                        url: "https://www.tele2.lv/coverage/?cmd=get&cid=12756&coverage_tile=1&z={z}&x={x}&y={y}&t=4G&q=1,2,3",
                         maxZoom: 18,
                     }),
                     opacity: 0.7
@@ -175,7 +175,7 @@ new CMCustomLayers(map, [
                             '<span class="attribute_text">https://www.tele2.lv/karte/',
                             "</span>",
                         ],
-                        url: "https://wms2.kartes.lv/TEL2/wgs/TELE2G2/{z}/{x}/{y}.png",
+                        url: "https://www.tele2.lv/coverage/?cmd=get&cid=12756&coverage_tile=1&z={z}&x={x}&y={y}&t=2G&q=1,2,3",
                         maxZoom: 18,
                     }),
                     opacity: 0.7
@@ -188,7 +188,7 @@ new CMCustomLayers(map, [
         name: "BITE",
         layers: [
             {
-                name: '5G',
+                name: 'NBIoT',
                 layer: new ol.layer.Tile({
                     source: new ol.source.XYZ({
                         attributions: [
@@ -196,8 +196,8 @@ new CMCustomLayers(map, [
                             '<span class="attribute_text">https://www.bite.lv/lv/parklajums',
                             "</span>",
                         ],
-                        url: "https://tiles.anrijs.lv/parklajums/bite/latest/{z}/{x}/{y}.png",
-                        maxZoom: 18,
+                        url: "https://tiles.anrijs.lv/parklajums/bite/nbiot/{z}/{x}/{y}.png",
+                        maxZoom: 12,
                     }),
                     opacity: 0.7
                  })
@@ -240,7 +240,7 @@ new CMCustomLayers(map, [
                     }),
                     opacity: 0.7
                  })
-            },
+            }
         ]
     }
 ]);
