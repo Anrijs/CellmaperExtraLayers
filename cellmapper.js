@@ -54,7 +54,7 @@ class CMCustomLayers {
     }
 }
 
-new CMCustomLayers(map, [
+let cmCustomLayers = new CMCustomLayers(map, [
     {
         id: "lmt",
         name: "LMT",
@@ -118,11 +118,11 @@ new CMCustomLayers(map, [
         ]
     },
     {
-        id: "tele2",
-        name: "TELE2",
+        id: "tele25g",
+        name: "TELE2 5G",
         layers: [
             {
-                name: '5G+',
+                name: 'N78',
                 layer: new ol.layer.Tile({
                     source: new ol.source.XYZ({
                         attributions: [
@@ -130,14 +130,14 @@ new CMCustomLayers(map, [
                             '<span class="attribute_text">https://www.tele2.lv/karte/',
                             "</span>",
                         ],
-                        url: "https://www.tele2.lv/coverage/?cmd=get&cid=12756&coverage_tile=1&z={z}&x={x}&y={y}&t=5G&q=3",
+                        url: "https://mim.tele2.com/MIMCS/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=78&countryCode=&currentServiceLayerNo=100",
                         maxZoom: 18,
                     }),
-                    opacity: 0.7
+                    opacity: 1
                  })
             },
             {
-                name: '5G',
+                name: 'N28',
                 layer: new ol.layer.Tile({
                     source: new ol.source.XYZ({
                         attributions: [
@@ -145,14 +145,35 @@ new CMCustomLayers(map, [
                             '<span class="attribute_text">https://www.tele2.lv/karte/',
                             "</span>",
                         ],
-                        url: "https://www.tele2.lv/coverage/?cmd=get&cid=12756&coverage_tile=1&z={z}&x={x}&y={y}&t=5G&q=2",
+                        url: "https://mim.tele2.com/MIMCS/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=76&countryCode=&currentServiceLayerNo=100",
                         maxZoom: 18,
                     }),
-                    opacity: 0.7
+                    opacity: 1
+                 })
+            },
+        ]
+    },
+    {
+        id: "tele2lte",
+        name: "TELE2 LTE",
+        layers: [
+            {
+                name: 'B1',
+                layer: new ol.layer.Tile({
+                    source: new ol.source.XYZ({
+                        attributions: [
+                            baseAttrib,
+                            '<span class="attribute_text">https://www.tele2.lv/karte/',
+                            "</span>",
+                        ],
+                        url: "https://mim.tele2.com/MIMCS/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=38,59&countryCode=&currentServiceLayerNo=100",
+                        maxZoom: 18,
+                    }),
+                    opacity: 1
                  })
             },
             {
-                name: 'LTE',
+                name: 'B3',
                 layer: new ol.layer.Tile({
                     source: new ol.source.XYZ({
                         attributions: [
@@ -160,10 +181,76 @@ new CMCustomLayers(map, [
                             '<span class="attribute_text">https://www.tele2.lv/karte/',
                             "</span>",
                         ],
-                        url: "https://www.tele2.lv/coverage/?cmd=get&cid=12756&coverage_tile=1&z={z}&x={x}&y={y}&t=4G&q=1,2,3",
+                        url: "https://mim.tele2.com/MIMCS/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=37,58&countryCode=&currentServiceLayerNo=100",
                         maxZoom: 18,
                     }),
-                    opacity: 0.7
+                    opacity: 1
+                 })
+            },
+            {
+                name: 'B7',
+                layer: new ol.layer.Tile({
+                    source: new ol.source.XYZ({
+                        attributions: [
+                            baseAttrib,
+                            '<span class="attribute_text">https://www.tele2.lv/karte/',
+                            "</span>",
+                        ],
+                        url: "https://mim.tele2.com/MIMCS/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=39,60&countryCode=&currentServiceLayerNo=100",
+                        maxZoom: 18,
+                    }),
+                    opacity: 1
+                 })
+            },
+            {
+                name: 'B20',
+                layer: new ol.layer.Tile({
+                    source: new ol.source.XYZ({
+                        attributions: [
+                            baseAttrib,
+                            '<span class="attribute_text">https://www.tele2.lv/karte/',
+                            "</span>",
+                        ],
+                        url: "https://mim.tele2.com/MIMCS/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=35,56&countryCode=&currentServiceLayerNo=100",
+                        maxZoom: 18,
+                    }),
+                    opacity: 1
+                 })
+            },
+        ]
+    },
+    {
+        id: "tele22g",
+        name: "TELE2 2G/3G",
+        layers: [
+            {
+                name: '3G B8',
+                layer: new ol.layer.Tile({
+                    source: new ol.source.XYZ({
+                        attributions: [
+                            baseAttrib,
+                            '<span class="attribute_text">https://www.tele2.lv/karte/',
+                            "</span>",
+                        ],
+                        url: "https://mim.tele2.com/MIMCS/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=27,48&countryCode=&currentServiceLayerNo=100",
+                        maxZoom: 18,
+                    }),
+                    opacity: 1
+                 })
+            },
+            {
+                name: '3G B1',
+                layer: new ol.layer.Tile({
+                    source: new ol.source.XYZ({
+                        attributions: [
+                            baseAttrib,
+                            '<span class="attribute_text">https://www.tele2.lv/karte/',
+                            "</span>",
+                        ],
+                        url: "https://mim.tele2.com/MIMCS/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=29,50&countryCode=&currentServiceLayerNo=100",
+                        maxZoom: 18,
+                    }),
+                    opacity: 1
                  })
             },
             {
@@ -175,10 +262,10 @@ new CMCustomLayers(map, [
                             '<span class="attribute_text">https://www.tele2.lv/karte/',
                             "</span>",
                         ],
-                        url: "https://www.tele2.lv/coverage/?cmd=get&cid=12756&coverage_tile=1&z={z}&x={x}&y={y}&t=2G&q=1,2,3",
+                        url: "https://mim.tele2.com/MIMCS/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=22,23,43,44&countryCode=&currentServiceLayerNo=100",
                         maxZoom: 18,
                     }),
-                    opacity: 0.7
+                    opacity: 1
                  })
             },
         ]
