@@ -1,0 +1,247 @@
+{
+    "groups": [
+        {
+            "id": "lmt",
+            "name": "LMT",
+            "layers": [
+                {
+                    "name": "5G",
+                    "type": "WMS",
+                    "source": {
+                        "url": "https://karte.lmt.lv/geoserver/gwc/service/wms",
+                        "params": {
+                            "layers": "lmt:internet_5g",
+                            "VERSION": "1.1.1"
+                        },
+                        "resolutions": [256]
+                    },
+                    "opacity": 0.7
+                },
+                 {
+                    "name": "LTE",
+                    "type": "WMS",
+                    "source": {
+                        "url": "https://karte.lmt.lv/geoserver/gwc/service/wms",
+                        "params": {
+                            "layers": "lmt:lmt_internet_4g",
+                            "VERSION": "1.1.1"
+                        },
+                        "resolutions": [256]
+                    },
+                    "opacity": 0.7
+                },
+                {
+                    "name": "3G",
+                    "type": "WMS",
+                    "source": {
+                        "url": "https://karte.lmt.lv/geoserver/gwc/service/wms",
+                        "attributions": [
+                            "<span class='attribute_text'>https://karte.lmt.lv</span>"
+                        ],
+                        "params": {
+                            "layers": "lmt:lmt_internet_3G",
+                            "VERSION": "1.1.1"
+                        },
+                        "resolutions": [256]
+                    },
+                    "opacity": 0.7
+                },
+                {
+                    "name": "2G",
+                    "type": "WMS",
+                    "source": {
+                        "url": "https://karte.lmt.lv/geoserver/gwc/service/wms",
+                        "attributions": [
+                            "<span class='attribute_text'>https://karte.lmt.lv</span>"
+                        ],
+                        "params": {
+                            "layers": "lmt:lmt_pamata",
+                            "VERSION": "1.1.1"
+                        },
+                        "resolutions": [256]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "tele2_5g",
+            "name": "TELE2 5G",
+            "layers": [
+                {
+                    "name": "N78",
+                    "type": "XYZ",
+                    "source": {
+                        "url": "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=78&countryCode=&currentServiceLayerNo=100",
+                        "attributions": [
+                            "<span class='attribute_text'>https://www.tele2.lv/karte/</span>"
+                        ],
+                        "maxZoom": 18
+                    },
+                    "opacity": 1
+                },
+                 {
+                    "name": "N40",
+                    "type": "XYZ",
+                    "source": {
+                        "url": "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=98&countryCode=&currentServiceLayerNo=100",
+                        "attributions": [
+                            "<span class='attribute_text'>https://www.tele2.lv/karte/</span>"
+                        ],
+                        "maxZoom": 18
+                    },
+                    "opacity": 1
+                },
+                {
+                    "name": "N28",
+                    "type": "XYZ",
+                    "source": {
+                        "url": "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=76&countryCode=&currentServiceLayerNo=100",
+                        "attributions": [
+                            "<span class='attribute_text'>https://www.tele2.lv/karte/</span>"
+                        ],
+                        "maxZoom": 18
+                    },
+                    "opacity": 1
+                }
+            ]
+        },
+        {
+            "id": "tele2_lte",
+            "name": "TELE2 LTE",
+            "layers": [
+                {
+                    "name": "B1",
+                    "type": "XYZ",
+                    "source": {
+                        "url": "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=38,59&countryCode=&currentServiceLayerNo=100",
+                        "attributions": [
+                            "<span class='attribute_text'>https://www.tele2.lv/karte/</span>"
+                        ],
+                        "maxZoom": 18
+                    },
+                    "opacity": 1
+                },
+                {
+                    "name": "B3",
+                    "type": "XYZ",
+                    "source": {
+                        "url": "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=37,58&countryCode=&currentServiceLayerNo=100",
+                        "attributions": [
+                            "<span class='attribute_text'>https://www.tele2.lv/karte/</span>"
+                        ],
+                        "maxZoom": 18
+                    },
+                    "opacity": 1
+                },
+                {
+                    "name": "B7",
+                    "type": "XYZ",
+                    "source": {
+                        "url": "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=39,60&countryCode=&currentServiceLayerNo=100",
+                       "attributions": [
+                            "<span class='attribute_text'>https://www.tele2.lv/karte/</span>"
+                        ],
+                        "maxZoom": 18
+                    },
+                    "opacity": 1
+                },
+                {
+                    "name": "B8",
+                    "type": "XYZ",
+                    "source": {
+                        "url": "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=57&countryCode=&currentServiceLayerNo=100",
+                        "attributions": [
+                            "<span class='attribute_text'>https://www.tele2.lv/karte/</span>"
+                        ],
+                        "maxZoom": 18
+                    },
+                    "opacity": 1
+                },
+                {
+                    "name": "B20",
+                    "type": "XYZ",
+                    "source": {
+                        "url": "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=35,56&countryCode=&currentServiceLayerNo=100",
+                        "attributions": [
+                            "<span class='attribute_text'>https://www.tele2.lv/karte/</span>"
+                        ],
+                        "maxZoom": 18
+                    },
+                    "opacity": 1
+                }
+            ]
+        },
+        {
+            "id": "tele2_2g",
+            "name": "TELE2 2G/3G",
+            "layers": [
+                {
+                    "name": "3G B8",
+                    "type": "XYZ",
+                    "source": {
+                        "url": "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=27,48&countryCode=&currentServiceLayerNo=100",
+                        "attributions": [
+                            "<span class='attribute_text'>https://www.tele2.lv/karte/</span>"
+                        ],
+                        "maxZoom": 18
+                    },
+                    "opacity": 1
+                },
+                {
+                    "name": "3G B1",
+                    "type": "XYZ",
+                    "source": {
+                        "url": "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=29,50&countryCode=&currentServiceLayerNo=100",
+                        "attributions": [
+                            "<span class='attribute_text'>https://www.tele2.lv/karte/</span>"
+                        ],
+                        "maxZoom": 18
+                    },
+                    "opacity": 1
+                },
+                {
+                    "name": "2G",
+                    "type": "XYZ",
+                    "source": {
+                        "url": "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=22,23,43,44&countryCode=&currentServiceLayerNo=100",
+                        "attributions": [
+                            "<span class='attribute_text'>https://www.tele2.lv/karte/</span>"
+                        ],
+                        "maxZoom": 18
+                    },
+                    "opacity": 1
+                }
+            ]
+        },
+        {
+            "id": "bite",
+            "name": "BITE",
+            "layers": [
+                {
+                    "name": "NBIoT",
+                    "type": "XYZ",
+                    "source": {
+                        "url": "https://tiles.anrijs.lv/parklajums/bite/nbiot/{z}/{x}/{y}.png",
+                        "attributions": [
+                            "<span class='attribute_text'>https://www.bite.lv/lv/parklajums</span>"
+                        ],
+                        "maxZoom": 12
+                    },
+                    "opacity": 0.7
+                },
+                {
+                    "name": "All",
+                    "type": "CRL",
+                    "source": {
+                        "url": "https://arcgiscache.bite.lt/arcgiscache/gbitelv/Layers/LV_data_all/{l}/{r}/{c}.png",
+                        "attributions": [
+                            "<span class='attribute_text'>https://www.bite.lv/lv/parklajums</span>"
+                        ],
+                        "maxZoom": 16
+                    },
+                    "opacity": 0.7
+                }
+            ]
+        }
+    ]
+}
