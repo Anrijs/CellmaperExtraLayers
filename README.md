@@ -1,5 +1,5 @@
 # Cellmapper Extra Layers
-Adds LMT 5G and Tele2 (Latvia) 5G layers to cellmaper.
+Adds Bite, Tele2 (Latvia) and LMT 2G,3G,4G,5G layers to cellmaper, with detailed band coverage.
 
 ## Installation:
 1. Download the release (xpi) file to your local computer.
