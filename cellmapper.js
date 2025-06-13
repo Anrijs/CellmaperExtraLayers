@@ -151,6 +151,22 @@ let cmCustomLayers = new CMCustomLayers(map, [
                     opacity: 1
                  })
             },
+            {
+                name: 'N40',
+                layer: new ol.layer.Tile({
+                    source: new ol.source.XYZ({
+                        attributions: [
+                            baseAttrib,
+                            '<span class="attribute_text">https://www.tele2.lv/karte/',
+                            "</span>",
+                        ],
+                        url: "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=98&countryCode=&currentServiceLayerNo=100",
+                        maxZoom: 18,
+                    }),
+                    opacity: 1
+                 })
+            },
+			
         ]
     },
     {
