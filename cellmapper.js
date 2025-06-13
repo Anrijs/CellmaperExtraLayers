@@ -130,7 +130,7 @@ let cmCustomLayers = new CMCustomLayers(map, [
                             '<span class="attribute_text">https://www.tele2.lv/karte/',
                             "</span>",
                         ],
-                        url: "https://mim.tele2.com/MIMCS/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=78&countryCode=&currentServiceLayerNo=100",
+                        url: "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=78&countryCode=&currentServiceLayerNo=100",
                         maxZoom: 18,
                     }),
                     opacity: 1
@@ -145,7 +145,7 @@ let cmCustomLayers = new CMCustomLayers(map, [
                             '<span class="attribute_text">https://www.tele2.lv/karte/',
                             "</span>",
                         ],
-                        url: "https://mim.tele2.com/MIMCS/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=76&countryCode=&currentServiceLayerNo=100",
+                        url: "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=76&countryCode=&currentServiceLayerNo=100",
                         maxZoom: 18,
                     }),
                     opacity: 1
@@ -166,7 +166,7 @@ let cmCustomLayers = new CMCustomLayers(map, [
                             '<span class="attribute_text">https://www.tele2.lv/karte/',
                             "</span>",
                         ],
-                        url: "https://mim.tele2.com/MIMCS/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=38,59&countryCode=&currentServiceLayerNo=100",
+                        url: "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=38,59&countryCode=&currentServiceLayerNo=100",
                         maxZoom: 18,
                     }),
                     opacity: 1
@@ -181,7 +181,7 @@ let cmCustomLayers = new CMCustomLayers(map, [
                             '<span class="attribute_text">https://www.tele2.lv/karte/',
                             "</span>",
                         ],
-                        url: "https://mim.tele2.com/MIMCS/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=37,58&countryCode=&currentServiceLayerNo=100",
+                        url: "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=37,58&countryCode=&currentServiceLayerNo=100",
                         maxZoom: 18,
                     }),
                     opacity: 1
@@ -196,7 +196,23 @@ let cmCustomLayers = new CMCustomLayers(map, [
                             '<span class="attribute_text">https://www.tele2.lv/karte/',
                             "</span>",
                         ],
-                        url: "https://mim.tele2.com/MIMCS/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=39,60&countryCode=&currentServiceLayerNo=100",
+                        url: "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=39,60&countryCode=&currentServiceLayerNo=100",
+                        maxZoom: 18,
+                    }),
+                    opacity: 1
+                 })
+            },
+            {
+             {
+                name: 'B8',
+                layer: new ol.layer.Tile({
+                    source: new ol.source.XYZ({
+                        attributions: [
+                            baseAttrib,
+                            '<span class="attribute_text">https://www.tele2.lv/karte/',
+                            "</span>",
+                        ],
+                        url: "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=57&countryCode=&currentServiceLayerNo=100",
                         maxZoom: 18,
                     }),
                     opacity: 1
@@ -211,7 +227,7 @@ let cmCustomLayers = new CMCustomLayers(map, [
                             '<span class="attribute_text">https://www.tele2.lv/karte/',
                             "</span>",
                         ],
-                        url: "https://mim.tele2.com/MIMCS/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=35,56&countryCode=&currentServiceLayerNo=100",
+                        url: "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=35,56&countryCode=&currentServiceLayerNo=100",
                         maxZoom: 18,
                     }),
                     opacity: 1
@@ -232,7 +248,7 @@ let cmCustomLayers = new CMCustomLayers(map, [
                             '<span class="attribute_text">https://www.tele2.lv/karte/',
                             "</span>",
                         ],
-                        url: "https://mim.tele2.com/MIMCS/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=27,48&countryCode=&currentServiceLayerNo=100",
+                        url: "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=27,48&countryCode=&currentServiceLayerNo=100",
                         maxZoom: 18,
                     }),
                     opacity: 1
@@ -247,7 +263,7 @@ let cmCustomLayers = new CMCustomLayers(map, [
                             '<span class="attribute_text">https://www.tele2.lv/karte/',
                             "</span>",
                         ],
-                        url: "https://mim.tele2.com/MIMCS/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=29,50&countryCode=&currentServiceLayerNo=100",
+                        url: "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=29,50&countryCode=&currentServiceLayerNo=100",
                         maxZoom: 18,
                     }),
                     opacity: 1
@@ -262,7 +278,7 @@ let cmCustomLayers = new CMCustomLayers(map, [
                             '<span class="attribute_text">https://www.tele2.lv/karte/',
                             "</span>",
                         ],
-                        url: "https://mim.tele2.com/MIMCS/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=22,23,43,44&countryCode=&currentServiceLayerNo=100",
+                        url: "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=22,23,43,44&countryCode=&currentServiceLayerNo=100",
                         maxZoom: 18,
                     }),
                     opacity: 1
