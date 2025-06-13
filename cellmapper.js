@@ -203,7 +203,6 @@ let cmCustomLayers = new CMCustomLayers(map, [
                  })
             },
             {
-             {
                 name: 'B8',
                 layer: new ol.layer.Tile({
                     source: new ol.source.XYZ({
