@@ -203,7 +203,7 @@
                     "name": "2G",
                     "type": "XYZ",
                     "source": {
-                        "url": "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=43&countryCode=&currentServiceLayerNo=100",
+                        "url": "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=45&countryCode=&currentServiceLayerNo=100",
                         "attributions": [
                             "<span class='attribute_text'>https://www.tele2.lv/karte/</span>"
                         ],
