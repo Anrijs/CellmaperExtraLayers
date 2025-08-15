@@ -79,11 +79,6 @@
                     },
                     "opacity": 1
                 },
-                 {
-        {
-            "id": "tele2_5g",
-            "name": "TELE2 5G",
-            "layers": [
                 {
                     "name": "N78",
                     "type": "XYZ",
