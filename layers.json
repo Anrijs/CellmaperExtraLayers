@@ -68,10 +68,27 @@
             "name": "TELE2 5G",
             "layers": [
                 {
+                    "name": "N1",
+                    "type": "XYZ",
+                    "source": {
+                        "url": "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=82&countryCode=&currentServiceLayerNo=100",
+                        "attributions": [
+                            "<span class='attribute_text'>https://www.tele2.lv/karte/</span>"
+                        ],
+                        "maxZoom": 18
+                    },
+                    "opacity": 1
+                },
+                 {
+        {
+            "id": "tele2_5g",
+            "name": "TELE2 5G",
+            "layers": [
+                {
                     "name": "N78",
                     "type": "XYZ",
                     "source": {
-                        "url": "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=78&countryCode=&currentServiceLayerNo=100",
+                        "url": "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=81&countryCode=&currentServiceLayerNo=100",
                         "attributions": [
                             "<span class='attribute_text'>https://www.tele2.lv/karte/</span>"
                         ],
