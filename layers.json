@@ -31,22 +31,6 @@
                     "opacity": 0.7
                 },
                 {
-                    "name": "3G",
-                    "type": "WMS",
-                    "source": {
-                        "url": "https://karte.lmt.lv/geoserver/gwc/service/wms",
-                        "attributions": [
-                            "<span class='attribute_text'>https://karte.lmt.lv</span>"
-                        ],
-                        "params": {
-                            "layers": "lmt:lmt_internet_3G",
-                            "VERSION": "1.1.1"
-                        },
-                        "resolutions": [256]
-                    },
-                    "opacity": 0.7
-                },
-                {
                     "name": "2G",
                     "type": "WMS",
                     "source": {
@@ -185,32 +169,8 @@
         },
         {
             "id": "tele2_2g",
-            "name": "TELE2 2G/3G",
+            "name": "TELE2 2G",
             "layers": [
-                {
-                    "name": "3G B8",
-                    "type": "XYZ",
-                    "source": {
-                        "url": "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=52&countryCode=&currentServiceLayerNo=100",
-                        "attributions": [
-                            "<span class='attribute_text'>https://www.tele2.lv/karte/</span>"
-                        ],
-                        "maxZoom": 18
-                    },
-                    "opacity": 1
-                },
-                {
-                    "name": "3G B1",
-                    "type": "XYZ",
-                    "source": {
-                        "url": "https://mim.tele2.com/MIMCore/api/Tile/GetOverlay?x={x}&y={y}&z={z}&viewType=1&serviceThresholdIds=50&countryCode=&currentServiceLayerNo=100",
-                        "attributions": [
-                            "<span class='attribute_text'>https://www.tele2.lv/karte/</span>"
-                        ],
-                        "maxZoom": 18
-                    },
-                    "opacity": 1
-                },
                 {
                     "name": "2G",
                     "type": "XYZ",
