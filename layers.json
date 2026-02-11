@@ -203,16 +203,16 @@
                 },
                 {
                     "name": "All",
-                    "type": "CRL",
+                    "type": "XYZ",
                     "source": {
-                        "url": "https://arcgiscache.bite.lt/arcgiscache/gbitelv/Layers/LV_data_all/{l}/{r}/{c}.png",
+                        "url": "https://tiles.anrijs.lv/parklajums/bite/2025-12-09/{z}/{x}/{y}.png",
                         "attributions": [
                             "<span class='attribute_text'>https://www.bite.lv/lv/parklajums</span>"
                         ],
-                        "maxZoom": 16
+                        "maxZoom": 14
                     },
                     "opacity": 0.7
-                }
+                },
             ]
         }
     ]
